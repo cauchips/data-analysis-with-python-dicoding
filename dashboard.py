@@ -10,7 +10,7 @@ with st.sidebar:
     st.image("https://placehold.co/600x400?text=Jonathan+Chandra")
     st.markdown("# Proyek Jonathan Chandra :sparkles:")
 
-st.title('Dashboard Sepeda Berbagi')
+st.title('Dashboard Bike Sharing')
 
 st.header('Perbandingan Jumlah Rental Berdasarkan Musim antara Tahun 2011 dan 2012')
 st.markdown('Atur tahun di sidebar! :smile:')
