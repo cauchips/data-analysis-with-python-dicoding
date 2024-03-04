@@ -43,8 +43,10 @@ total_rental_monthly = all_df.groupby(['yr', 'month_indonesia'])['registered'].s
 
 month_order = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember']
 
+custom_palette = sns.color_palette("husl", 2)
+
 plt.figure(figsize=(12, 6))
-sns.barplot(data=total_rental_monthly, x='month_indonesia', y='registered', hue='yr', order=month_order)
+sns.barplot(data=total_rental_monthly, x='month_indonesia', y='registered', hue='yr', order=month_order, palette=custom_palette)
 plt.title('Perbandingan Jumlah Pengguna Terdaftar Berdasarkan Bulan antara Tahun 2011 dan 2012')
 plt.xlabel('Bulan')
 plt.ylabel('Jumlah Rental Pengguna Terdaftar')
