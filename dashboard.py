@@ -62,7 +62,7 @@ selected_season = st.sidebar.selectbox("Pilih Musim", all_df['season_indonesia']
 is_workday = all_df[all_df['season_indonesia'] == selected_season].groupby(['workingday'])['cnt'].sum().reset_index()
 
 plt.figure(figsize=(12, 8))
-sns.barplot(data=is_workday, x='workingday', y='cnt', hue='workingday')
+sns.barplot(data=is_workday, x='workingday', y='cnt')
 plt.title(f'Distribusi Jumlah Rental di {selected_season}')
 plt.xlabel('Hari Kerja')
 plt.ylabel('Jumlah Rental')
