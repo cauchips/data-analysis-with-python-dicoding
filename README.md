@@ -1,2 +1,13 @@
-# data-analysis-with-python-dicoding
-Final Project for Dicoding Certification
+# Dicoding Final Project - Bike Sharing Dashboard ✨
+
+## Setup environment
+```
+conda create --name main-ds python=3.9
+conda activate main-ds
+pip install numpy pandas matplotlib seaborn jupyter streamlit protobuf
+```
+
+## Run steamlit app
+```
+streamlit run dashboard.py
+```
